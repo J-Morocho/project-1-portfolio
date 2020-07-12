@@ -47,8 +47,10 @@ Components layed out in a column. Contact form is tight and takes up the whole s
 
 **Tablet**  
 - [Tablet](https://res.cloudinary.com/jcloud3zf/image/upload/v1594586117/project1-portfolio/tablet-mockup_o2hoju.png)  
-Sections begin to breath a bit more by arranging themselves in columns. The scroll bar disappears and only the nav bar remains. The contact form is no longer takes up the entire screen. The text inputs inside begin to spread apart.  
+Sections begin to breath a bit more by arranging themselves in columns. The scroll bar disappears and only the nav bar remains. The contact form is no longer takes up the entire screen. The text inputs inside begin to spread apart.   
+   
 **Desktop**
+  
 - [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)  The content is spaced out. The project section takes on a mosaic layout. The round nav bar icon present on mobile and tablet layout disappears. A progressive scroll bar takes it's place. 
 
 Wireframing Resources:
@@ -59,11 +61,7 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-Include a full list of features that have been [prioritized](https://res.cloudinary.com/doaftkgbv/image/upload/v1583773146/ValueVSComplexity_u2inhx.png) based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
-
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
+[View Matrix](https://res.cloudinary.com/jcloud3zf/image/upload/v1594594589/project1-portfolio/time-priority-matrix_yji7gp.png)  
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
@@ -73,14 +71,35 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+**Mobile**  
+
+- Use CSS grid on home/about section  
+- On mobile there is a nav bar icon in the lower right hand corner of the device  
+- Once clicked the icon becomes blue and a menu slides in from the right. It contains links to the page sections
+- Next to the nav bar icon there is a bar that progresses from far left to the right edge of the device as the user scrolls down the page.  
+- The contact page is tight and takes up the majority of the screen  
+- The project section has cards that are arranged in a column. Projects are pulled in from a "database" and displayed.
+
+**Tablet**  
+- There is greater spacing in the home/about section. Images have shifted out from under any text and into the right side of the device  
+- The scroll bar that was present on mobile is now gone. Instead the nav bar icon remains. Functionality remains the same.  
+-The projects section is expanded and now includes extra content  
+-Contact page is also expanded 
+
+**Desktop**  
+
+- About me section expands further. About text wraps to the left of any images.
+- A dynamic scroll bar is include. Corresponding text is highlighted once user reaches a section on the page.
+- Content in project section layed out as a "mosaic"   
+
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Anything else that is not MVP  
+
+- Responsive skills section  
+- Experience section  
+- Fade in effects
 
 ## Functional Components
 
