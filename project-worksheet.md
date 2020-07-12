@@ -21,14 +21,14 @@ This project is built to display my projects as well as show off what i have lea
 
 Component Inspiration:
 
--[Contact Form](https://www.ventureharbour.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-01-at-18.45.15.png?cld_params=dpr_2.0,f_auto,q_auto)
--[Project Section](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-21_minimalist_portfolio_webdesign_inspiration_touch.jpg)
--[Mobile Menu Bar](https://www.rezo-zero.com/fr/)
--[Scroll Bar](https://www.stevenmengin.com/)
+-[Contact Form](https://www.ventureharbour.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-01-at-18.45.15.png?cld_params=dpr_2.0,f_auto,q_auto)  
+-[Project Section](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-21_minimalist_portfolio_webdesign_inspiration_touch.jpg)  
+-[Mobile Menu Bar](https://www.rezo-zero.com/fr/)   
+-[Scroll Bar](https://www.stevenmengin.com/)  
 
-Design/Aesthetic Inspiration:
--[Simple White Boxes](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-02_minimalist_portfolio_webdesign_inspiration_elevenmade.jpg)
--[CSS Grid](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-21_minimalist_portfolio_webdesign_inspiration_touch.jpg)
+Design/Aesthetic Inspiration:  
+-[Simple White Boxes](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-02_minimalist_portfolio_webdesign_inspiration_elevenmade.jpg)  
+-[CSS Grid](https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-21_minimalist_portfolio_webdesign_inspiration_touch.jpg)  
 
 ## Google Sheet
 
@@ -40,9 +40,9 @@ Include link to your google sheet here.
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile]()
-- [Tablet]()
-- [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)
+- [Mobile](https://res.cloudinary.com/jcloud3zf/image/upload/v1594579636/project1-portfolio/mobile-mockup_hv4sve.png)  
+- [Tablet]()  
+- [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)  
 
 Wireframing Resources:
 
