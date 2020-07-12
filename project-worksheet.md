@@ -40,9 +40,16 @@ Include link to your google sheet here.
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
+**Mobile**  
+
 - [Mobile](https://res.cloudinary.com/jcloud3zf/image/upload/v1594579636/project1-portfolio/mobile-mockup_hv4sve.png)  
-- [Tablet]()  
-- [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)  
+Components layed out in a column. Contact form is tight and takes up the whole screen. There is a blue bar at the bottom which moves to the right as the user scrolls down the screen. Projects page contains cards containing projects. When the card is clicked it will take the user to the repo where the project is hosted. There is a nav bar menu that turns blue once clicked. Upon being clicked a menu slides in from the right.  
+
+**Tablet**  
+- [Tablet](https://res.cloudinary.com/jcloud3zf/image/upload/v1594586117/project1-portfolio/tablet-mockup_o2hoju.png)  
+Sections begin to breath a bit more by arranging themselves in columns. The scroll bar disappears and only the nav bar remains. The contact form is no longer takes up the entire screen. The text inputs inside begin to spread apart.  
+**Desktop**
+- [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)  The content is spaced out. The project section takes on a mosaic layout. The round nav bar icon present on mobile and tablet layout disappears. A progressive scroll bar takes it's place. 
 
 Wireframing Resources:
 
