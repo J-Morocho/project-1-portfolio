@@ -34,7 +34,9 @@ h2#project {
 
 h2#contact {
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    padding: 1em;
 }
 
 
@@ -42,7 +44,36 @@ h2#contact {
     width: 50%;
 }
 
-form {
-    display: block;
+#contact-form-flex {
     background-color: #4A4848;
+    padding: 1em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+input {
+    /* Thanks to user151323 on Stackoverflow for this solution */
+    background: transparent; 
+    border: none;
+    border-bottom: 2px solid #5d64a3;
+}
+
+input[name="message"] {
+    
+    background-color: white;
+    height: 9em;
+}
+
+input[type="submit"] {
+    background-color:  #717BD9;
+    display: inline;
+    width: 40%;
+    padding: 1em;
+    margin-top: 10%;
+    font-size: 1em;
+    border: none;
+    font-weight: bold;
 }
