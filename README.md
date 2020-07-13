@@ -85,16 +85,18 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Mobile/Tablet wireframe| 4hr | 6hr| 2hr|
+| Desktop wireframe| 2hr| 3hr| 1 hr|  
 | Mobile nav icon | M | 1hr | -hr | -hr|
 | Mobile scroll bar progression | M | 3hr | -hr | -hr|
 | Mobile nav slide in | H | 3hr | -hr | -hr|
-| Adding contact form | H | 1.5hr| -hr | -hr |
+| Adding contact form | H | 1.5hr| 1.76hr | -hr |
 | Projects section CSS Grid layout | H | 4hr | -hr | -hr|
 | Responsive projects section | H | 2hrs| -hr | -hr |
 | Fixed nav bar on desktop | H | 1.5hr | -hr | -hr|
 | Desktop scroll bar highlight | H | 3hr | -hr | -hr|
 | Using API display projects | H | 4hr | -hr | -hr |
-| Total | - | 23hrs| -hrs | -hrs |
+| Total | - | 29hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
