@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
@@ -53,11 +53,6 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
   
 - [Desktop](https://res.cloudinary.com/jcloud3zf/image/upload/v1594576221/project1-portfolio/full-desktop1_wfbvvk.png)  The content is spaced out. The project section takes on a mosaic layout. The round nav bar icon present on mobile and tablet layout disappears. A progressive scroll bar takes it's place. 
 
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
-
 
 ## Time/Priority Matrix 
 
@@ -93,7 +88,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Content in project section layed out as a "mosaic"   
 
 
-#### PostMVP 
+### PostMVP 
 
 - Anything else that is not MVP  
 
@@ -110,26 +105,25 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 1hr | 1.5hr | -hr|
-| Project Previews | H | 3hr | -hr | -hr|
-| Regular Nav | H | H | -hr | -hr|
-| Adding Form | H | 1.5hr| -hr | -hr |
-| Other sections and flex| M | 4hr | 2hr | -hr|
-| Working with API | H | 3hrs| 2hr | -hr |
-| Responsive | H | 3hr | -hr | -hr|
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 15.5hrs| -hrs | -hrs |
+| Mobile nav icon | M | 1hr | -hr | -hr|
+| Mobile scroll bar progression | M | 3hr | -hr | -hr|
+| Mobile nav slide in | H | 3hr | -hr | -hr|
+| Adding contact form | H | 1.5hr| -hr | -hr |
+| Projects section CSS Grid layout | H | 4hr | -hr | -hr|
+| Responsive projects section | H | 2hrs| -hr | -hr |
+| Fixed nav bar on desktop | H | 1.5hr | -hr | -hr|
+| Desktop scroll bar highlight | H | 3hr | -hr | -hr|
+| Using API display projects | H | 4hr | -hr | -hr |
+| Total | - | 23hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Skills section flexbox | L | 2hr | -hr | -hr|
+| Text highlight on hover | L | .5hr | -hr | -hr|
+| Experience flex box| M | 3hr| -hr| -hr|
+| Fade in sections | M | 2hr | -hr | -hr|
+| Total | H | 7.5hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
