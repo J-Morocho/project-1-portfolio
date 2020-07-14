@@ -7,3 +7,6 @@ $navIcon.on('click', () => {
 
     $navIcon.css('background-color', 'red')
 })
+
+// when contact-form flex width is greater than 960px hide
+
