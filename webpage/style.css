@@ -49,6 +49,10 @@ body {
         padding: 3em;
     }
 
+    #side-nav {
+        visibility: hidden;
+    }
+
 }
 
 /* desktop */
@@ -197,7 +201,7 @@ nav#mobile-nav {
 }
 
 .nav-active {
-    background-color: red;
+    background-color: #717BD9;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -259,4 +263,8 @@ li {
 li > a{
     text-decoration: none;
     color: inherit;
+}
+
+#side-nav {
+    visibility: hidden;
 }
