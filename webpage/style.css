@@ -68,6 +68,7 @@ body {
         visibility: hidden;
     }
 
+
     #about-flexbox {
         display: flex;
         justify-content: space-between;
@@ -105,8 +106,39 @@ body {
     height: 2px;
 }
 
+#project-container-flex {
+    height: auto;
+}
+
+.project-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #4A4848;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.project-header > h3 {
+    display: flex;
+    margin: 0px;
+}
+
+.project-header > h3 > p {
+    margin: 10px;
+}
+
 #prj-section-title {
     text-align: center;
+}
+
+div > .project-image {
+    width: 100%;
+    height: 30vh;
+    background-color: red;
 }
 
 h2#project {
@@ -232,13 +264,18 @@ nav#mobile-nav {
     margin-right: 10px;
 }
 
-.menu {
+#menu {
     background-color: #717BD9;
     width: 75vw;
     height: 50vh;
     position: fixed;
     right: 0px;
     top: 40vh;
+}
+
+#menu.active{
+    background-color: red;
+    left: 1000px
 }
 
 .menu-list{

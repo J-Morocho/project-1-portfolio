@@ -1,12 +1,3 @@
-let $navIcon = $('.nav-icon-round')
-$('.menu').hide()
-$navIcon.on('click', () => {
-    $('.menu').slideToggle('slow', function(){
-        $('.menu-list').show()
-    })
-
-    $navIcon.css('background-color', '#717BD9')
-})
 
 // when contact-form flex width is greater than 960px hide
 // my projects sheet
@@ -15,3 +6,13 @@ $navIcon.on('click', () => {
 const url = "https://spreadsheets.google.com/feeds/list/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/od6/public/values?alt=json"
 fetch(url)
     .then(response => response.json())
+    .then(data => {
+        const projects = data.feed.entry.map( entry => {
+            return {
+                title: entry.gsx$title.$t,
+                image: entry.gsx$image.$t,
+                description: entry.gsx$description.$t,
+                url: entry.gsx$url.$t
+             }
+        })
+    })
