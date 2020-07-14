@@ -1,6 +1,9 @@
 let $navIcon = $('.nav-icon-round')
-$navIcon.on('click' , () => {
-    $navIcon.attr('class', 'nav-active')
+$('.menu').hide()
+$navIcon.on('click', () => {
+    $('.menu').slideToggle('slow', function(){
+        $('.menu-list').show()
+    })
 })
 
 let $toggledIcon = $('.nav-active')
