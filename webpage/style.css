@@ -18,9 +18,17 @@ body {
     #content-container {
         padding: 3em
     }
-    
+
+    #my-name{
+        margin: 0px;
+    }
+    #sub-heading {
+        display: inline-block;
+        margin-bottom: 20px;
+        
+    }
     #about-description {
-        visibility: hidden;
+        font-style: italic;
     }
     .a-header {
         display: block;
