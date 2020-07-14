@@ -142,10 +142,34 @@ nav#mobile-nav {
 }
 
 .menu {
-    background-color: salmon;
-    width: 50vw;
+    background-color: #717BD9;
+    width: 75vw;
     height: 50vh;
     position: fixed;
     right: 0px;
     top: 40vh;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+li {
+    margin: 20%;
+    font-size: 2em;
+    border-bottom: 1px solid white;
+}
+
+li > a{
+    text-decoration: none;
+    color: inherit;
 }
