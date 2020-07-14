@@ -12,6 +12,22 @@ body {
     padding: 1em;
     
 }
+
+/*tablet responsive*/
+@media only screen and (min-width: 720px) {
+    #content-container {
+        background-color: red;
+
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #content-container {
+        background-color: yellow; 
+    }
+}
+
+
 .section-underline {
     background-color: #717BD9;
     height: 2px;
@@ -32,6 +48,7 @@ h2#project {
     width: 50%;
 }
 
+
 h2#contact {
     display: flex;
     flex-direction: column;
@@ -49,6 +66,7 @@ h2#contact {
     flex-direction: column;
     background-color: #4A4848;
     padding: 1em;
+    margin-bottom: 70px;
 }
 form {
     display: flex;
@@ -94,6 +112,8 @@ nav#mobile-nav {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px;
 }
 
 .nav-icon-round {
@@ -105,8 +125,9 @@ nav#mobile-nav {
     border-radius: 100%;
     border: 1px solid #4a484894;
     margin: 15px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    box-shadow: -1px 1px 5px;
 }
 
 .nav-active {

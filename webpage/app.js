@@ -4,9 +4,6 @@ $navIcon.on('click', () => {
     $('.menu').slideToggle('slow', function(){
         $('.menu-list').show()
     })
-})
 
-let $toggledIcon = $('.nav-active')
-$toggledIcon.on('click', () => {
-    $toggledIcon.removeClass('nav-active')
+    $navIcon.css('background-color', 'red')
 })
