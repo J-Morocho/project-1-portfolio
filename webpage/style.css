@@ -17,17 +17,49 @@ body {
 @media only screen and (min-width: 720px) {
     #content-container {
         background-color: red;
+        padding: 3em
+    }
+
+    #about-image {
+        position: relative;
+        float: right;
+        top: 0px;
+        display: inline;
+    }
+
+    section[name="contact"] {
+        padding: 3em;
     }
 
 }
 
+/* desktop */
 @media only screen and (min-width: 960px) {
     #content-container {
-        background-color: yellow; 
+        background-color: yellow;
+        padding: 5em;
     }
 
+    section[name="contact"] {
+        padding: 5em;
+    }
     #mobile-nav{
         visibility: hidden;
+    }
+
+    #about-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #side-nav {
+        background-color: violet;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        right: 0px;
+
     }
 }
 
