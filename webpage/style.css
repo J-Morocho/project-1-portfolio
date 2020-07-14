@@ -140,3 +140,12 @@ nav#mobile-nav {
 #center-left {
     margin-right: 10px;
 }
+
+.menu {
+    background-color: salmon;
+    width: 50vw;
+    height: 50vh;
+    position: fixed;
+    right: 0px;
+    top: 40vh;
+}
