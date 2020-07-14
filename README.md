@@ -96,6 +96,8 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 | Fixed nav bar on desktop | H | 1.5hr | -hr | -hr|
 | Desktop scroll bar highlight | H | 3hr | -hr | -hr|
 | Using API display projects | H | 4hr | -hr | -hr |
+| Deploying web app| H | 3hr | -hr | -hr |
+| Web app testing | H | 1.5hr | -hr | -hr |
 | Total | - | 29hrs| -hrs | -hrs |
 
 #### PostMVP

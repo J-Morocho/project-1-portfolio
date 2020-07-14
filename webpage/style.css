@@ -85,3 +85,44 @@ input[type="submit"] {
     border: none;
     font-weight: bold;
 }
+
+nav#mobile-nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#nav-icon-round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #4a484894;
+    margin: 15px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-dot {
+    border-radius: 100%;
+    background-color: #4A4848;
+    width: 10px;
+    height: 10px;
+}
+
+#dot-flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+#center-left {
+    margin-right: 10px;
+}
