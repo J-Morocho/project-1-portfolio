@@ -16,8 +16,18 @@ body {
 /*tablet responsive*/
 @media only screen and (min-width: 720px) {
     #content-container {
-        background-color: red;
         padding: 3em
+    }
+    
+    #about-description {
+        visibility: hidden;
+    }
+    .a-header {
+        display: block;
+    }
+
+    #project-container-flex {
+        margin-top: 1em;
     }
 
     #about-image {
@@ -36,7 +46,6 @@ body {
 /* desktop */
 @media only screen and (min-width: 960px) {
     #content-container {
-        background-color: yellow;
         padding: 5em;
     }
 
@@ -52,14 +61,29 @@ body {
         justify-content: space-between;
     }
 
-
     #side-nav {
-        background-color: violet;
         position: fixed;
-        width: 200px;
+        display: flex;
+        justify-content: center;
+        width: 100px;
         height: 100%;
         right: 0px;
+    }
 
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 10px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    
+    ul#side-menu > li > a {
+        text-decoration: none;
     }
 }
 
@@ -161,7 +185,7 @@ nav#mobile-nav {
     margin: 15px;
     width: 40px;
     height: 40px;
-    box-shadow: -1px 1px 2px;
+    
 }
 
 .nav-active {
