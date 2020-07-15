@@ -65,7 +65,7 @@ body {
     
     .project-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         
     }
     
@@ -97,9 +97,6 @@ body {
 }
 
 
-
-
-
 #side-nav {
     visibility: hidden;
 }
@@ -111,6 +108,7 @@ body {
 @media only screen and (min-width: 1024px) {
     #content-container {
         padding: 5em;
+        padding-right: 7em;
     }
 
     section[name="contact"] {
@@ -122,9 +120,8 @@ body {
     }
 
 
-    #about-flexbox {
-        display: flex;
-        justify-content: space-between;
+    ul > li {
+        margin: 0px auto;
     }
 
     #side-nav {
@@ -197,11 +194,12 @@ body {
 
 .project-image {
     display: inline;
+    width: 100%;
 }
 
+
 #prj-img {
-    width: 50%;
-    height: 800px;
+    width: 100%;
 }
 
 h2#project {
@@ -216,12 +214,14 @@ h2#project {
 }
 
 
-    .grid {
-        display: grid;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        height: 100px;
-    }
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100px;
+}
+
+
 }
 
 .section-underline {

@@ -26,9 +26,8 @@ function createProjectCard(project) {
     const $card = $('<div>').addClass('proj-card')
     const $projectDivider = $('<div>').addClass('project-divider')
     const $projHeader = $('<div>').addClass('project-header')
-    const $h3 = $('<h3>')
-    const $projectName = $h3.addClass('project-name').append($('<p>').text(project.title))
-    const $projectLinks = $h3.addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")])
+    const $projectName = $('<h3>').addClass('project-name').append($('<p>').text(project.title))
+    const $projectLinks = $('<h3>').addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")])
     const $projectImage = $('<div>').attr('class', 'project-image').append( $('<img id="prj-img">').attr('src', project.image))
     $projHeader.append([$projectName, $projectLinks])
 
