@@ -313,6 +313,8 @@ input {
     border: none;
     border-bottom: 2px solid rgba(172, 164, 164, 0.603);
     padding: 1em;
+    color: white;
+    overflow-wrap: normal;
 }
 
 #message-container {
@@ -322,9 +324,10 @@ input {
     align-items: center;
     width: 100%;
 }
-input[name="message"] {
+input[id="message"] {
     background-color: white;
     height: 9em;
+    color: black;
 }
 
 input[type="submit"] {

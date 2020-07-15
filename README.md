@@ -87,18 +87,19 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 | --- | :---: |  :---: | :---: | :---: |
 | Mobile/Tablet wireframe| 4hr | 6hr| 2hr|
 | Desktop wireframe| 2hr| 3hr| 1 hr|  
-| Mobile nav icon | M | 1hr | -hr | -hr|
+| Mobile nav icon | M | 1hr | .70hr | .70hr|
 | Mobile scroll bar progression | M | 3hr | -hr | -hr|
 | Mobile nav slide in | H | 3hr | -hr | -hr|
-| Adding contact form | H | 1.5hr| 1.76hr | -hr |
+| Adding contact form | H | 1.5hr| 1.76hr | 1.76hr |
+| Styling google contact form| L | 1hr | .56hr| .56hr|
 | Projects section CSS Grid layout | H | 4hr | -hr | -hr|
 | Responsive projects section | H | 2hrs| -hr | -hr |
-| Fixed nav bar on desktop | H | 1.5hr | -hr | -hr|
+| Fixed nav bar on desktop | H | 1.5hr | .5hr | .5hr|
 | Desktop scroll bar highlight | H | 3hr | -hr | -hr|
 | Using API display projects | H | 4hr | -hr | -hr |
 | Deploying web app| H | 3hr | -hr | -hr |
 | Web app testing | H | 1.5hr | -hr | -hr |
-| Total | - | 29hrs| -hrs | -hrs |
+| Total | - | 31.5hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
