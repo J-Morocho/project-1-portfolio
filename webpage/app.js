@@ -29,7 +29,7 @@ function createProjectCard(project) {
     const $a = $('<a>')
     const $projectName = $h3.addClass('project-name').append($('<p>').text(project.title))
     const $projectLinks = $h3.addClass('project-links').append([$a.attr('href', project.url).text("Demo"), $a.attr('href', project.code).text("Code")])
-    const $projectImage = $('<img>').attr('src', project.image)
+    const $projectImage = $('<div>').attr('class', 'project-image').append( $('<img>').attr('src', project.image))
     $projHeader.append([$projectName, $projectLinks])
 
     $('#projects-container-flex').append($card.append([$projectDivider, $projHeader, $projectImage]))

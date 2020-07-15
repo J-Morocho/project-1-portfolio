@@ -121,7 +121,10 @@ body {
 }
 
 #project-container-flex {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    
 }
 
 .project-divider {
@@ -149,10 +152,8 @@ body {
     text-align: center;
 }
 
-div > .project-image {
-    width: 100%;
-    height: 30vh;
-    background-color: gray;
+.project-image {
+    display: inline;
 }
 
 h2#project {
