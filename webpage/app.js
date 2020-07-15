@@ -16,7 +16,6 @@ fetch(url)
                 code: entry.gsx$code.$t,
              }
         })
-        console.log(projects)
         projects.forEach(project => createProjectCard(project))
     })
 
@@ -32,7 +31,6 @@ function createProjectCard(project) {
     $projHeader.append([$projectName, $projectLinks])
 
     $('#projects-container-flex').append($card.append([$projectDivider, $projHeader, $projectImage]))
-    console.log('card made')
 }
 
 
@@ -44,3 +42,20 @@ function displayMenu() {
 }
 
 $('.hamburger').on('click', displayMenu)
+
+
+// progressive scroll
+
+// grab all side-menu elements in the side-nav 
+let lastId,
+$sideMenu = $('.side-menu')
+$topMenuHeight = $sideMenu.outerHeight()+1 // height of the side menu
+console.log($topMenuHeight)
+
+// get the list items
+$menuItems = $sideMenu.find('a') // find a tags of the list items. Array
+// from the a tags do function on them
+scrollItems = $menuItems.map(function(){
+    let item = $($(this).attr('href')); // give the a tabs an href of blank for now
+    console.log(item)
+});
