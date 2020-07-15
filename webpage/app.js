@@ -16,25 +16,31 @@ fetch(url)
              }
         })
 
-        console.log(projects)
+        projects.forEach(project => createProjectCard(project))
     })
 
 
 
 function createProjectCard(project) {
     const $card = $('<div>').addClass('proj-card')
-    const $proDivider = $('<div>').addClass('project-divider')
+    const $projectDivider = $('<div>').addClass('project-divider')
     const $projHeader = $('<div>').addClass('project-header')
     const $h3 = $('<h3>')
-    const $projectName = $h3.addClass('project-name').append($('<p>').text(project.name))
-    const $projectLinks = $h3.addClass('project-links')
-    $('#projects-container-flex').append($card)
+    const $a = $('<a>')
+    const $projectName = $h3.addClass('project-name').append($('<p>').text(project.title))
+    const $projectLinks = $h3.addClass('project-links').append([$a.attr('src', project.url).text("Demo"), $a.attr('src', project.code).text("Code")])
+    const $projectImage = $('<img>').attr('src', project.image)
+    $projHeader.append([$projectName, $projectLinks])
+
+    $('#projects-container-flex').append($card.append([$projectDivider, $projHeader, $projectImage]))
     console.log('card made')
 }
 
 
 function displayMenu() {
-    $('.menu').attr('id', 'active')
+    $('.menu').toggleClass('active')
+    $('.hamburger').toggleClass('active')
+    $('.nav-dot').toggleClass('dot-active')
     
 }
 
