@@ -1,4 +1,4 @@
 googleform.*
-composer.json
-index.php
+*.json
+*.php
 
