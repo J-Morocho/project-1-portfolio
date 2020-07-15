@@ -12,10 +12,11 @@ fetch(url)
                 title: entry.gsx$title.$t,
                 image: entry.gsx$image.$t,
                 description: entry.gsx$description.$t,
-                url: entry.gsx$url.$t
+                url: entry.gsx$url.$t,
+                code: entry.gsx$code.$t,
              }
         })
-
+        console.log(projects)
         projects.forEach(project => createProjectCard(project))
     })
 
@@ -26,10 +27,9 @@ function createProjectCard(project) {
     const $projectDivider = $('<div>').addClass('project-divider')
     const $projHeader = $('<div>').addClass('project-header')
     const $h3 = $('<h3>')
-    const $a = $('<a>')
     const $projectName = $h3.addClass('project-name').append($('<p>').text(project.title))
-    const $projectLinks = $h3.addClass('project-links').append([$a.attr('href', project.url).text("Demo"), $a.attr('href', project.code).text("Code")])
-    const $projectImage = $('<div>').attr('class', 'project-image').append( $('<img>').attr('src', project.image))
+    const $projectLinks = $h3.addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")])
+    const $projectImage = $('<div>').attr('class', 'project-image').append( $('<img id="prj-img">').attr('src', project.image))
     $projHeader.append([$projectName, $projectLinks])
 
     $('#projects-container-flex').append($card.append([$projectDivider, $projHeader, $projectImage]))

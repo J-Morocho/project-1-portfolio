@@ -156,6 +156,11 @@ body {
     display: inline;
 }
 
+#prj-img {
+    width: 50%;
+    height: 800px;
+}
+
 h2#project {
     display: flex;
     flex-direction: column;
