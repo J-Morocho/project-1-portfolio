@@ -48,6 +48,7 @@ body {
         padding-top: 0em;
     }
 
+   
     #project-container-flex {
         margin-top: 1em;
         display: grid;
@@ -83,7 +84,7 @@ body {
     
     .project-image {
         display: block;
-        width: 100%;      
+        width: 100%;  
     }
     #side-nav {
         visibility: hidden;
@@ -112,7 +113,9 @@ body {
 
     section[name="contact"] {
         padding: 5em;
+        padding-top: 0em;
     }
+
 
     #mobile-nav{
         visibility: hidden;
@@ -142,6 +145,7 @@ body {
         width: 100%;
         margin: 0px;
         padding: 0px;
+        top: 40px;
     }
 
     
@@ -166,6 +170,8 @@ body {
         border-bottom:3px solid #F38A8A;
     }
 
+    
+
     .section-underline {
         background-color: #717BD9;
         height: 2px;
@@ -177,7 +183,8 @@ body {
         column-gap: 1em;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(3, 1fr);
-        height: auto;
+        grid-auto-rows: auto;
+        height: 480px;
 
     }
     
@@ -206,10 +213,11 @@ body {
         text-align: center;
     }
 
-
-    .proj-image > img {
-        display: block;
+    .project-image {
         width: 100px;
+    }
+    .proj-image > img {
+        background-size: cover;
     }
 
     h2#project {
@@ -219,10 +227,16 @@ body {
     }
 
 
+    
+    
     #p-div {
         width: 50%;
     }
 
+    /* TESTING */
+    #projects-container-flex > div:nth-child(odd){
+        background-color: red;
+    }
 
 
 
@@ -241,6 +255,7 @@ body {
     align-items: space-around;
     
 }
+
 
 .project-divider {
     width: 100%;

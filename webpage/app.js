@@ -3,7 +3,7 @@
 // my projects sheet
 //https://docs.google.com/spreadsheets/d/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/edit#gid=0
 //url to fetch from https://spreadsheets.google.com/feeds/list/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/od6/public/values?alt=json
-
+/*
 const url = "https://spreadsheets.google.com/feeds/list/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/od6/public/values?alt=json"
 fetch(url)
     .then(response => response.json())
@@ -19,7 +19,7 @@ fetch(url)
         })
         projects.forEach(project => createProjectCard(project))
     })
-
+*/
 
 
 function createProjectCard(project) {
@@ -81,7 +81,7 @@ $menuItems.click(function(e){
     
     let offsetTop = href === "#" ? 0 : $(this).offset().top - $topMenuHeight+1; 
     $('html, body').stop().animate({
-        scrollTop: offsetTop
+        scrollTop: offsetTop,
     }, 850);
     e.preventDefault();
 })
@@ -91,21 +91,24 @@ $menuItems.click(function(e){
 $(window).scroll(function(){
     // Get container scroll position
     let fromTop = $(this).scrollTop()+$topMenuHeight;
+
     // Get id of current scroll item
     let cur = scrollItems.map(function(){
       if ($(this).offset().top < fromTop)
         return this;
     });
+    console.log(cur)
     // Get the id of the current element
     cur = cur[cur.length-1];
     let id = cur && cur.length ? cur[0].id : "";
     
     if (lastId !== id) {
+        
         lastId = id;
         // Set/remove active class
         $menuItems
           .parent().removeClass("nav-active")
-          .end().filter("[href=#"+id+"]").parent().addClass("nav-active");
+          .end().filter(`[href="#${id}"]`).parent().addClass("nav-active");
     }                   
  });
 
