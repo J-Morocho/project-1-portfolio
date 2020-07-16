@@ -71,7 +71,7 @@ scrollItems = $menuItems.map(function(){
         return item;
     }
 });
-
+console.log('SCROLLITEMS', scrollItems)
 
 // bind click handler to menu items
 $menuItems.click(function(e){
