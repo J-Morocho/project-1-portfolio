@@ -57,5 +57,39 @@ $menuItems = $sideMenu.find('a') // find a tags of the list items. Array
 // from the a tags do function on them
 scrollItems = $menuItems.map(function(){
     let item = $($(this).attr('href')); // give the a tabs an href of blank for now
-    console.log(item)
+    if (item.length) { // if there is a scroll item then return it.
+        console.log(item)
+        return item;
+    }
 });
+
+// bind click handler to menu items
+$menuItems.click(function(e){
+    let href = $(this).attr("href")
+    let offsetTop = href === "#" ? 0 : $(href).offset().top-$topMenuHeight+1; 
+    $('html, body').stop()
+})
+
+// on scroll set distance from top to 
+// be the height of the bar + height of the menu
+$(window).scroll(function(){
+    // Get container scroll position
+    let fromTop = $(this).scrollTop()+$topMenuHeight;
+    
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+      if ($(this).offset().top < fromTop)
+        return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+    
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+          .parent().removeClass("active")
+          .end().filter("[href=#"+id+"]").parent().addClass("active");
+    }                   
+ });
