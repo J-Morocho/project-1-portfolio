@@ -35,9 +35,6 @@ body {
         display: block;
     }
 
-    #project-container-flex {
-        margin-top: 1em;
-    }
 
     #about-image {
         position: relative;
@@ -48,14 +45,16 @@ body {
 
     section[name="contact"] {
         padding: 3em;
+        padding-top: 0em;
     }
 
     #project-container-flex {
-        display: flex;
+        margin-top: 1em;
+        display: grid;
         flex-direction: column;
         align-items: space-around;
-        
     }
+    
     
     .project-divider {
         width: 100%;
@@ -154,17 +153,32 @@ body {
         visibility: hidden;
     }
 
+    li a {
+        padding:10px 20px;
+        display:block;
+        color:white;
+        text-decoration:none;
+        transition:all 0.3s ease-in-out;
+    }
+
+    .nav-active a{
+        background-color:#F38A8A;
+        border-bottom:3px solid #F38A8A;
+    }
 
     .section-underline {
         background-color: #717BD9;
         height: 2px;
     }
     
-    #project-container-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: space-around;
-        
+    #projects-container-flex {
+        margin-top: 1em;
+        display: grid;
+        column-gap: 1em;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+        height: auto;
+
     }
     
     .project-divider {
@@ -184,45 +198,37 @@ body {
         margin: 0px;
     }
 
-.project-header > h3 > a {
-    margin: 10px;
-}
+    .project-header > h3 > a {
+        margin: 10px;
+    }
 
-#prj-section-title {
-    text-align: center;
-}
-
-.project-image {
-    display: inline;
-    width: 100%;
-}
+    #prj-section-title {
+        text-align: center;
+    }
 
 
-#prj-img {
-    width: 100%;
-}
+    .proj-image > img {
+        display: block;
+        width: 100px;
+    }
 
-h2#project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-#p-div {
-    width: 50%;
-}
+    h2#project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
-.grid {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    height: 100px;
-}
+    #p-div {
+        width: 50%;
+    }
+
+
 
 
 }
+
+/* mobile layout */
 
 .section-underline {
     background-color: #717BD9;
@@ -265,10 +271,7 @@ h2#project {
     display: inline;
 }
 
-#prj-img {
-    width: 50%;
-    height: 800px;
-}
+
 
 h2#project {
     display: flex;
