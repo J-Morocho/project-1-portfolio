@@ -113,4 +113,10 @@ $(window).scroll(function(){
     }                   
  });
 
- 
+ function increaseBarLength(){
+  
+    $('.bar').css('height', $(this).scrollTop())
+    console.log("margin-top",$('.bar').css('margin-top')+2)
+  }
+  
+  $(window).scroll(increaseBarLength)
