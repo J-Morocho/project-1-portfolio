@@ -56,7 +56,7 @@ $('.hamburger').on('click', displayMenu)
 
 
 // progressive scroll
-
+// Many thanks to Suresh Sigera for helping me out with this portion of my code.
 // grab all side-menu elements in the side-nav 
 let lastId,
 $sideMenu = $('.side-menu'),
@@ -71,7 +71,6 @@ scrollItems = $menuItems.map(function(){
         return item;
     }
 });
-console.log('SCROLLITEMS', scrollItems)
 
 // bind click handler to menu items
 $menuItems.click(function(e){

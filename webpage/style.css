@@ -48,6 +48,9 @@ body {
         padding-top: 0em;
     }
 
+    section {
+        height: auto;
+    } 
    
     #project-container-flex {
         margin-top: 1em;
@@ -98,7 +101,7 @@ body {
 
 
 #side-nav {
-    visibility: hidden;
+    display: none;
 }
 #side-menu {
     visibility: hidden;
@@ -108,20 +111,13 @@ body {
 @media only screen and (min-width: 1024px) {
     #content-container {
         padding: 5em;
-        padding-right: 9em;
+        padding-right: 7em;
     }
 
     section[name="contact"] {
-        padding: 5em;
-        padding-top: 0em;
+        padding-right: 7em;
     }
-
-    section {
-        height: 100vh;
-    }
-
-
-
+    
     #mobile-nav{
         visibility: hidden;
     }
@@ -135,7 +131,6 @@ body {
         position: fixed;
         display: flex;
         justify-content: center;
-        background-color: sandybrown;
         width: 100px;
         height: 100%;
         right: 0px;
@@ -172,7 +167,7 @@ body {
     }
 
     .nav-active {
-        background-color:#F38A8A;
+        background-color:#5865d4;
     }
 
     
@@ -249,6 +244,15 @@ body {
 
 /* mobile layout */
 
+section {
+    height: auto;
+} 
+
+@media only screen and (min-width: 1024px) {
+    section {
+        height: 100vh;
+    }
+}
 .section-underline {
     background-color: #717BD9;
     height: 2px;
