@@ -62,8 +62,6 @@ let lastId,
 $sideMenu = $('.side-menu'),
 $topMenuHeight = $sideMenu.outerHeight()+1, // height of the side menu
 
-
-// get the list items
 $menuItems = $sideMenu.find('a'), // find a tags of the list items. Array
 // from the a tags do function on them
 scrollItems = $menuItems.map(function(){
@@ -84,22 +82,26 @@ $menuItems.click(function(e){
         scrollTop: offsetTop,
     }, 850);
     e.preventDefault();
-})
+});
 
 // on scroll set distance from top to 
 // be the height of the bar + height of the menu
+// ERROR IS HERE...
 $(window).scroll(function(){
     // Get container scroll position
     let fromTop = $(this).scrollTop()+$topMenuHeight;
 
     // Get id of current scroll item
-    let cur = scrollItems.map(function(){
-      if ($(this).offset().top < fromTop)
+    let cur = scrollItems.map( function(){
+      if ($(this).offset().top < fromTop) {
         return this;
+      }
     });
-    console.log(cur)
+
     // Get the id of the current element
     cur = cur[cur.length-1];
+    console.log(scrollItems[0])
+    console.log('cur', cur)
     let id = cur && cur.length ? cur[0].id : "";
     
     if (lastId !== id) {
@@ -111,4 +113,3 @@ $(window).scroll(function(){
           .end().filter(`[href="#${id}"]`).parent().addClass("nav-active");
     }                   
  });
-
