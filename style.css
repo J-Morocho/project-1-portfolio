@@ -15,7 +15,11 @@ body {
 }
 
 p#about-description {
-    width: 100%;
+    width: auto;
+    padding: 1em;
+    margin: 0px;
+    font-size: 5vw;
+    line-height: 2em;
 }
 
 div {
