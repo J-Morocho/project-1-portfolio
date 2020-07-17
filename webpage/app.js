@@ -18,6 +18,7 @@ fetch(url)
              }
         })
         projects.forEach(project => createProjectCard(project))
+        placeOnGrid(0, projects[0])
     })
 
 
@@ -48,27 +49,26 @@ $('.hamburger').on('click', displayMenu)
 // css grid stuff
 
 function placeOnGrid(n, project) {
+    // if n=0 append to grid0
     // if n=1 append to grid1
-    // if n=2 append to grid2
     // Project image goes into larger square. 
-
-    const $projectDivider = $('<div>').addClass('project-divider')
-    const $projHeader = $('<div>').addClass('project-header')
-    const $projectName = $('<h3>').addClass('project-name').append($('<p>').text(project.title))
-    const $projectLinks = $('<h3>').addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")])
-    const $projectImage = $('<img>').attr('src', project.image);
-    $projHeader.append([$projectName, $projectLinks])
+    const $projectsContainerFlex = $('#projects-container-flex');
+    const $projectDivider = $('<div>').addClass('project-divider');
+    const $projHeader = $('<div>').addClass('project-header');
+    const $projectName = $('<h3>').addClass('project-name').append($('<p>').text(project.title));
+    const $projectLinks = $('<h3>').addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")]);
+    const $projectImage = $('<img>').attr('src', project.image).css('width', '100%');
+    $projHeader.append([$projectName, $projectLinks]);
 
     // append projectDivider, projectHeader, projectImage to outer div used in grid
     // **testodd-t is a placeholder name will be changed later
-    $('<div>').addClass('')
-
-    const $projHeader = $()
-    
-    if (n !== 1 || n !== 2) {
-        console.error('Invalid Number');
+    console.log(n)
+    if (n === 0) {
+        let $divLargeBlock = $('<div>').addClass('testodd-t').append([$projectDivider, $projHeader, $projectImage]);
+        const $grid0 = $('<div>').addClass(`grid${n}`).append([$divLargeBlock, $('<div>').addClass('testodd-i')])
+        $projectsContainerFlex.append($grid0)
     } else {
-        $('<div').addClass(`grid${n}`)
+        console.log("no grid created")
     }
 } 
 

@@ -519,7 +519,7 @@ li > a{
         display: none;
     }; */
 
-    .grid1 {
+    .grid0 {
         padding: 1em;
         display: grid;
         column-gap: 1em;
@@ -530,7 +530,7 @@ li > a{
 
     }
 
-    .grid2 {
+    .grid1 {
         padding: 1em;
         display: grid;
         column-gap: 1em;
