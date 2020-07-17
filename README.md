@@ -1,6 +1,6 @@
 # Project Overview
 
-#Hosted Project  
+## Hosted Project  
 https://project-1-portfolio.herokuapp.com/
 
 ## Project Schedule
@@ -9,8 +9,8 @@ https://project-1-portfolio.herokuapp.com/
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Mobile core HTML and CSS | Incomplete
-|Day 3| Desktop core HTML and CSS| Incomplete
+|Day 2| Mobile core HTML and CSS | Complete
+|Day 3| Desktop core HTML and CSS| Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -88,21 +88,21 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Mobile/Tablet wireframe| 4hr | 6hr| 2hr|
-| Desktop wireframe| 2hr| 3hr| 1 hr|  
+| Mobile/Tablet wireframe| 4hr | 6hr| 6hr|
+| Desktop wireframe| 2hr| 3hr| 3 hr|  
 | Mobile nav icon | M | 1hr | .70hr | .70hr|
 | Mobile scroll bar progression | M | 3hr | -hr | -hr|
-| Mobile nav slide in | H | 3hr | -hr | -hr|
+| Mobile nav slide in | H | 3hr | 5hr | 5hr|
 | Adding contact form | H | 1.5hr| 1.76hr | 1.76hr |
 | Styling google contact form| L | 1hr | .56hr| .56hr|
-| Projects section CSS Grid layout | H | 4hr | -hr | -hr|
+| Projects section CSS Grid layout | H | 4hr | 6hr | 6hr|
 | Responsive projects section | H | 2hrs| -hr | -hr |
 | Fixed nav bar on desktop | H | 1.5hr | .5hr | .5hr|
-| Desktop scroll bar highlight | H | 3hr | -hr | -hr|
-| Using API display projects | H | 4hr | -hr | -hr |
-| Deploying web app| H | 3hr | -hr | -hr |
+| Desktop scroll bar highlight | H | 3hr | 3hr | 3hr|
+| Using API display projects | H | 4hr | 3hr | 3hr |
+| Deploying web app| H | 3hr | 1hr | 1hr |
 | Web app testing | H | 1.5hr | -hr | -hr |
-| Total | - | 31.5hrs| -hrs | -hrs |
+| Total | - | 31.5hrs| 30.52hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
