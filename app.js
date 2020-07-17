@@ -66,16 +66,20 @@ function placeOnGrid(n, project) {
 
     // append projectDivider, projectHeader, projectImage to outer div used in grid
     // **testodd-t is a placeholder name will be changed later
-    const $testoddi = $('<div>').addClass('testeven-t').text("hi")
+    const $testoddi = $('<div>').addClass('testeven-t').text(project.description)
+    const $testoddt = $('<div>').addClass('testeven-t').text("hi")
     const $testeveni = $('<div>').addClass('testodd-i').text('BRUH')
+    const $testevent = $('<div>').addClass('testodd-i').text('BRUH')
     if (n%2 === 0) {
         let $divLargeBlock = $('<div>').addClass('testeven-i').append([$projectDivider, $projHeader, $projectImage]);
         const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $testoddi])
         $projectsContainerFlex.append($grid0)
         console.log('odd', n)
     } else {
-        let $divLargeBlock = $('<div>').addClass('testingodd-i').text("hmm")
-        const $grid1 = $('<div>').addClass("grid1").append($('<div>').addClass('teven-i').text('text'))
+        let $divLargeBlock = $('<div>').addClass('testodd-i').append([$projectDivider, $projHeader, $projectImage])
+        const $grid1 = $('<div>').addClass("grid1")
+        $grid1.append($('<div>').addClass('testodd-t').text(project.description))
+        $grid1.append($divLargeBlock)
         $projectsContainerFlex.append($grid1)
     }
 

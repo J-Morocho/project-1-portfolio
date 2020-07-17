@@ -9,13 +9,13 @@ body {
 #content-container {
     display: flex;
     flex-direction: column;
+    height: auto;
     padding: 1em;
-    
 }
 
 p#about-description {
-    font-size: 2em;
-    line-height: 2rem;
+    font-size: 3em;
+    line-height: 4rem;
 }
 #side-nav {
     display: none;
@@ -255,7 +255,8 @@ li > a{
 /*tablet responsive*/
 @media only screen and (min-width: 720px) {
     #content-container {
-        padding: 3em
+        padding: 3em;
+        height: auto;
     }
 
     #my-name{
@@ -287,9 +288,9 @@ li > a{
         padding-top: 0em;
     }
 
-    section {
+    section[name='project'] {
         height: auto;
-    } 
+    }
    
     #project-container-flex {
         margin-top: 1em;
@@ -352,11 +353,14 @@ li > a{
     }
 
     p#about-description {
-        padding-right: 25em;
+        padding-right: 5em;
         font-size: 2em;
         line-height: 2rem;
     }
 
+    #about-image {
+        margin-bottom: 100%;
+    }
     .bar {
         display: block;
         background-color: #5865d4;
