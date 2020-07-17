@@ -282,18 +282,14 @@ footer {
     display: none;
 }
 
-@media only screen and (min-width: 539px) {
-    #content-container{
-        background-color: green;
-    }
-}
-
 
 /*tablet responsive*/
 @media only screen and (min-width: 720px) {
+
     #content-container {
-        padding: 3em;
+
         height: auto;
+        background-color: green;
     }
 
     #my-name{
@@ -312,7 +308,6 @@ footer {
         display: block;
     }
 
-
     #about-image {
         position: relative;
         float: right;
@@ -328,23 +323,7 @@ footer {
     section[name='project'] {
         height: auto;
     }
-    
-    /* .project-header > h3 > a {
-        margin: 0px;
-        margin-left: 1em;
-        text-decoration: none;
-        color: black;
-    }
-    
-    .project-name > p {
-        margin: 0px;
-    }
-    
-    #prj-section-title {
-        text-align: center;
-    } */
-
-
+  
     #project-container-flex {
         margin-top: 1em;
         display: grid;
@@ -354,6 +333,10 @@ footer {
     
     .project-header > h3 > a {
         margin: 10px;
+    }
+
+    #prj-img {
+        height: 400px;
     }
 
     #side-nav {
@@ -374,19 +357,33 @@ footer {
 /* desktop */
 @media only screen and (min-width: 1024px) {
     #content-container {
-        padding: 5em;
         padding-right: 7em;
         height: auto;
+        
     }
 
+    /* p#about-description {
+        width: auto;
+        padding: 1em;
+        margin: 0px;
+        font-size: 5vw;
+        line-height: 2em;
+    } */
+
+    #sub-heading {
+        display: block;
+    }
     p#about-description {
+        display: inline;
         padding-right: 5em;
         font-size: 2em;
-        line-height: 2rem;
+        line-height: 4rem;
+        padding: 1em;
     }
 
     #about-image {
-        margin-bottom: 100%;
+        position: relative;
+        top: 1px;
     }
     .bar {
         display: block;
