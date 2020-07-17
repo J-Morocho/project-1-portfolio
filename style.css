@@ -18,6 +18,15 @@ p#about-description {
     width: 100%;
 }
 
+div {
+    margin: 0 auto;
+    display: block;
+}
+
+#about-image > img {
+    display: block;
+    margin: 0 auto;
+}
 #side-nav {
     display: none;
 }
