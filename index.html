@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jendri Morocho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <div class="bar"></div>
+    <nav id="side-nav">
+        <ul class='side-menu'>
+            <li class="nav-active"><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content-container">
+        <section name='about'>
+            <h2 id="about"></h2>
+            <h1 class="a-header" id="my-name">Jendri Morocho</h1>
+            <h3 class="a-header" id="sub-heading">Software Engineer</h3>
+            <div id="about-image"> <!-- this will need to move below desc -->
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fspiritlore.files.wordpress.com%2F2015%2F11%2F192rkz5.jpg&f=1&nofb=1" width="310">
+            </div>
+            <p id="about-description">I am currently a Software Engineer fellow at General Assembly in NYC. My journey into tech began a couple of years ago in college after looking for the next thing to 
+                challenge myself with. Since graduating I have been working on my customer service skills in order to better improve the relationship between a servicing company and their customers. My
+                expertise lies in coming up with creative solutions to complex problems, as well as coming up with methods to optimize systems. Throughout my journey I have learned JavaScript, Python,
+                NodeJS, Docker, PostgreSQL, and many other technical skills required for a couple of personal projects I have worked on.
+            </p>
+        </section>
+        <section name='project' >
+            <h2 id="project">
+                <p id="prj-section-title" >PROJECTS</p>
+                <div class="section-underline" id='p-div'></div>
+            </h2>
+            <div id="projects-container-flex">
+                <!-- <div class='grid0'>
+                    <div class="testodd-t" style="width:100%;height: auto;">
+                        <div class="project-divider"></div>
+                        <div class="project-header">
+                            <h3 class="project-name"><p>PhysioViz</p></h3>
+                            <h3 class="project-links">
+                                <a src="url demo">Demo</a>
+                                <a src="url code">Code</a>
+                            </h3>
+                        </div>
+                        <img src="https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0261-21_minimalist_portfolio_webdesign_inspiration_touch.jpg" style="width:100%;height: auto;">
+                    </div>
+                    <div class="testodd-i" style="width:100%;height: auto;"></div>
+                </div>
+                <div class='grid1'>
+                    <div class="testeven-i" style="width:100%;height: auto;"></div>
+                    <div class="testeven-t" style="width:100%;height: auto;"></div>
+                </div>
+                <div class='grid0'>
+                    <div class="testodd-t" style="width:100%;height: auto;"></div>
+                    <div class="testodd-i" style="width:100%;height: auto;"></div>
+                </div> -->
+                
+            </div>
+        </section>
+    </div>
+    <section name="contact">
+        <h2 id="contact">
+            <p>CONTACT</p>
+            <div class="section-underline" id="c-div"></div>
+        </h2>
+        <div id="contact-form-flex">
+            <!-- may need another div here
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxdKY-iO_Zj9odHufPJr0cz0bjlhawE2k2BMi8hiDwoG8A4A/viewform?embedded=true" width="640" height="675" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            -->
+            <!-- styling google form was done by watching https://www.youtube.com/watch?v=0ZobsvqYA94-->
+            
+            <form action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxdKY-iO_Zj9odHufPJr0cz0bjlhawE2k2BMi8hiDwoG8A4A/formResponse' method="post" id="mG61Hd">
+                <p>Full Name</p>
+                <input type="text" name="entry.401311534" id='name'>
+                <p>Email</p>
+                <input type="email" name="entry.2128428984" id='email'>
+            
+                <div id=message-container>
+                    <p>Message</p>
+                    <input type="text" name="entry.69597511" id='message'>
+                    <input type="submit" value="SUBMIT" id='submit'>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="bar-bottom"></div>
+    <nav id="mobile-nav">
+        <div class="hamburger" id="icon">
+            
+            <div class="nav-dot" id="center-top"></div>
+            <div id="dot-flex-container">
+                <div class="nav-dot" id="center-left"></div>
+                <div class="nav-dot" id="center-right"></div>
+            </div>
+        </div> 
+    </nav>
+
+    <div class="menu">
+        <ul class='menu-list'>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

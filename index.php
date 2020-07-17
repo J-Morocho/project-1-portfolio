@@ -1,2 +1,2 @@
 <?php
-	include_once("webpage/index.html"); ?>
+	include_once("index.html"); ?>
