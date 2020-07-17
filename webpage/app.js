@@ -3,7 +3,7 @@
 // my projects sheet
 //https://docs.google.com/spreadsheets/d/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/edit#gid=0
 //url to fetch from https://spreadsheets.google.com/feeds/list/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/od6/public/values?alt=json
-/*
+
 const url = "https://spreadsheets.google.com/feeds/list/1T9156QzG1d079lkMnl279c1ygoPHE6fsD6Apx0j7d6g/od6/public/values?alt=json"
 fetch(url)
     .then(response => response.json())
@@ -19,7 +19,7 @@ fetch(url)
         })
         projects.forEach(project => createProjectCard(project))
     })
-*/
+
 
 
 function createProjectCard(project) {
@@ -47,7 +47,30 @@ $('.hamburger').on('click', displayMenu)
 
 // css grid stuff
 
+function placeOnGrid(n, project) {
+    // if n=1 append to grid1
+    // if n=2 append to grid2
+    // Project image goes into larger square. 
 
+    const $projectDivider = $('<div>').addClass('project-divider')
+    const $projHeader = $('<div>').addClass('project-header')
+    const $projectName = $('<h3>').addClass('project-name').append($('<p>').text(project.title))
+    const $projectLinks = $('<h3>').addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")])
+    const $projectImage = $('<img>').attr('src', project.image);
+    $projHeader.append([$projectName, $projectLinks])
+
+    // append projectDivider, projectHeader, projectImage to outer div used in grid
+    // **testodd-t is a placeholder name will be changed later
+    $('<div>').addClass('')
+
+    const $projHeader = $()
+    
+    if (n !== 1 || n !== 2) {
+        console.error('Invalid Number');
+    } else {
+        $('<div').addClass(`grid${n}`)
+    }
+} 
 
 
 
