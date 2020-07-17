@@ -11,11 +11,11 @@ body {
     flex-direction: column;
     height: auto;
     padding: 1em;
+    width: 360px;
 }
 
 p#about-description {
-    font-size: 3em;
-    line-height: 4rem;
+    width: 100%;
 }
 #side-nav {
     display: none;
@@ -41,6 +41,7 @@ section {
 
 #project-container-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: space-around;
     
@@ -72,8 +73,13 @@ section {
     text-align: center;
 }
 
-#project-image {
-   width: 100%;
+.project-image {
+    background-color: violet;
+}
+
+#proj-img {
+    width: 350px;
+    height: auto;
 }
 
 
@@ -248,7 +254,9 @@ li > a{
     display: none;
 }
 
-
+footer {
+    display: none;
+}
 
 
 
@@ -381,6 +389,7 @@ li > a{
 
     section[name="contact"] {
         padding-right: 7em;
+        padding-bottom: 0px;
     }
     
     
@@ -515,19 +524,6 @@ li > a{
         width: 50%;
     }
 
-    /* TESTING */
-    /* div.testodd {
-        background-color: blue;
-        margin: 10px;
-        column-span: 2/4;
-        grid-row: 1/3;
-        border: 3px solid yellow;
-    }
-
-    div.testeven {
-        display: none;
-    }; */
-
     .grid0 {
         padding: 1em;
         display: grid;
@@ -570,6 +566,18 @@ li > a{
         grid-column-start: -1;
         grid-column-end: -2;
         grid-row: 1/3;
+    }
+
+    footer {
+        background-color: #4A4848;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 20px;
+        position: relative;
+        bottom: 0px;
+        padding: 10px;
+        padding-left: 40px;
     }
 
 }
