@@ -67,9 +67,9 @@ function placeOnGrid(n, project) {
     // append projectDivider, projectHeader, projectImage to outer div used in grid
     // **testodd-t is a placeholder name will be changed later
     const $testoddi = $('<div>').addClass('testeven-t').text(project.description)
-    const $testoddt = $('<div>').addClass('testeven-t').text("hi")
-    const $testeveni = $('<div>').addClass('testodd-i').text('BRUH')
-    const $testevent = $('<div>').addClass('testodd-i').text('BRUH')
+    const $testoddt = $('<div>').addClass('testeven-t').text("")
+    const $testeveni = $('<div>').addClass('testodd-i').text('')
+    const $testevent = $('<div>').addClass('testodd-i').text('')
     if (n%2 === 0) {
         let $divLargeBlock = $('<div>').addClass('testeven-i').append([$projectDivider, $projHeader, $projectImage]);
         const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $testoddi])
@@ -148,7 +148,7 @@ $(window).scroll(function(){
 
  function increaseBarLength(){
     
-    $('.bar').css('height', $(this).scrollTop()*.2)
+    $('.bar').css('height', $(this).scrollTop()*.2 + 80)
   }
   
   $(window).scroll(increaseBarLength)
