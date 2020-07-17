@@ -545,11 +545,12 @@ li > a{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row: 1/3;
-        
     }
 
     .testodd-i {
         background-color: rebeccapurple;
+        width: 100%;
+        height: auto;
         grid-row: 1/3;
     }
 

@@ -66,10 +66,11 @@ function placeOnGrid(n, project) {
 
     // append projectDivider, projectHeader, projectImage to outer div used in grid
     // **testodd-t is a placeholder name will be changed later
+    const $testoddi = $('<div>').addClass('testeven-t').text("hi")
 
-    if (n%2 !== 0) {
-        let $divLargeBlock = $('<div>').addClass('testodd-t').append([$projectDivider, $projHeader, $projectImage]);
-        const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $('<div>').addClass('testodd-i')])
+    if (n%2 !== 1) {
+        let $divLargeBlock = $('<div>').addClass('testeven-1').append([$projectDivider, $projHeader, $projectImage]);
+        const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $testoddi])
         $projectsContainerFlex.append($grid0)
         console.log('odd', n)
     } 
