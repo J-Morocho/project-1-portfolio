@@ -17,9 +17,13 @@ fetch(url)
                 code: entry.gsx$code.$t,
              }
         })
+        let n = 0;
         projects.forEach(project => createProjectCard(project))
-        placeOnGrid(0, projects[0])
-    })
+        projects.forEach(project => {
+            placeOnGrid(n, project);
+            n+=1;
+        });
+    });
 
 
 
@@ -49,8 +53,8 @@ $('.hamburger').on('click', displayMenu)
 // css grid stuff
 
 function placeOnGrid(n, project) {
-    // if n=0 append to grid0
-    // if n=1 append to grid1
+    // if n is odd append to grid0
+    // if n is even append to grid1
     // Project image goes into larger square. 
     const $projectsContainerFlex = $('#projects-container-flex');
     const $projectDivider = $('<div>').addClass('project-divider');
@@ -62,14 +66,14 @@ function placeOnGrid(n, project) {
 
     // append projectDivider, projectHeader, projectImage to outer div used in grid
     // **testodd-t is a placeholder name will be changed later
-    console.log(n)
-    if (n === 0) {
+
+    if (n%2 !== 0) {
         let $divLargeBlock = $('<div>').addClass('testodd-t').append([$projectDivider, $projHeader, $projectImage]);
-        const $grid0 = $('<div>').addClass(`grid${n}`).append([$divLargeBlock, $('<div>').addClass('testodd-i')])
+        const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $('<div>').addClass('testodd-i')])
         $projectsContainerFlex.append($grid0)
-    } else {
-        console.log("no grid created")
-    }
+        console.log('odd', n)
+    } 
+
 } 
 
 
@@ -90,7 +94,6 @@ $menuItems = $sideMenu.find('a'), // find a tags of the list items. Array
 scrollItems = $menuItems.map(function(){
     let item = $($(this).attr('href')); // give the a tabs an href of blank for now
     if (item.length) { // if there is a scroll item then return it.
-        console.log(item)
         return item;
     }
 });
@@ -122,8 +125,6 @@ $(window).scroll(function(){
 
     // Get the id of the current element
     cur = cur[cur.length-1];
-    console.log(scrollItems[0])
-    console.log('cur', cur)
     let id = cur && cur.length ? cur[0].id : "";
     
     if (lastId !== id) {
@@ -138,7 +139,6 @@ $(window).scroll(function(){
 
  function increaseBarLength(){
     let initHeight = $('#about').offset().top
-    console.log(initHeight)
     $('.bar').css('height', initHeight + $(this).scrollTop())
   }
   
