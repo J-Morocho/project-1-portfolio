@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     display: flex;
@@ -10,13 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 1em;
-    width: 360px;
+    width: 100%;
 }
 
 p#about-description {
     width: 100%;
 }
+
 #side-nav {
     display: none;
 }
@@ -30,9 +31,18 @@ p#about-description {
 }
 
 
-section {
-    height: auto;
-} 
+section[name="about"] {
+    width: 100%;
+}
+
+section[name="contact"] {
+    width:100%;
+    background-color: green;
+}
+
+#projects-container-flex {
+    width: 100%;
+}
 
 .section-underline {
     background-color: #717BD9;
@@ -73,16 +83,10 @@ section {
     text-align: center;
 }
 
-.project-image {
-    background-color: violet;
+#prj-img {
+    width: 100%;
+    height: 360px;
 }
-
-#proj-img {
-    width: 350px;
-    height: auto;
-}
-
-
 
 h2#project {
     display: flex;
@@ -164,7 +168,7 @@ nav#mobile-nav {
 }
 
 .hamburger{
-    background-color: white;
+    background-color: #4A4848;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -178,7 +182,7 @@ nav#mobile-nav {
 
 .nav-dot {
     border-radius: 100%;
-    background-color: #4A4848;
+    background-color: white;
     width: 10px;
     height: 10px;
 }
@@ -256,6 +260,17 @@ li > a{
 
 footer {
     display: none;
+}
+
+
+@media only screen and (min-width: 375px){
+    body {
+        background-color: red;
+    }
+
+    section {
+        background-color: green;
+    }
 }
 
 
@@ -388,12 +403,12 @@ footer {
 
 
     section[name="contact"] {
-        padding-right: 7em;
         padding-bottom: 0px;
     }
     
     
     section {
+        width: 100%;
         height: 100vh;
     }
 
