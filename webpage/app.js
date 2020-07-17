@@ -139,14 +139,9 @@ $(window).scroll(function(){
  });
 
  function increaseBarLength(){
-    let initHeight = $('#about').offset().top
-    $('.bar').css('height', initHeight + $(this).scrollTop())
+    
+    $('.bar').css('height', $(this).scrollTop()*.2)
   }
   
   $(window).scroll(increaseBarLength)
 
-  function increaseBottomBarLength(){
-    $('.bar-bottom').css('width', $(this).scrollTop() + $(window).scrollTop()*.8 + "px")
-  }
-  
-  $(window).scroll(increaseBottomBarLength)

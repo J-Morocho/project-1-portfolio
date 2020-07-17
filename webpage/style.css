@@ -24,18 +24,8 @@ body {
 .bar {
     display: none;
 }
-.bar-bottom {
-    display: block;
-    background-color: #5865d4;
-    width: 0px;
-    height: 5px;
-    position: fixed;
-    margin: 0px;
-    margin-top: 190px;
-    margin-right: 15px;
-    bottom:0;
-    z-index: 1;
-}
+
+
 
 
 section {
@@ -80,8 +70,8 @@ section {
     text-align: center;
 }
 
-.project-image {
-    display: inline;
+#project-image {
+   width: 100%;
 }
 
 
@@ -249,7 +239,13 @@ li > a{
     color: inherit;
 }
 
+.grid0 {
+    display: none;
+}
 
+.grid1 {
+    display: none;
+}
 
 
 
@@ -354,18 +350,23 @@ li > a{
         height: auto;
     }
 
+    p#about-description {
+        padding-right: 25em;
+        line-height: 2rem;
+    }
+
     .bar {
         display: block;
         background-color: #5865d4;
-        width: 10px;
+        width: 5px;
         height: 0px;
         position: fixed;
         margin: 0px;
         margin-top: 190px;
-        margin-right: 15px;
+        margin-right: 40px;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: 0;
     }
 
     .bar-bottom {
@@ -399,6 +400,7 @@ li > a{
 
     ul > li {
         margin: 0px auto;
+        background-color: white;
     }
 
     #side-nav {
@@ -422,6 +424,8 @@ li > a{
         margin: 0px;
         padding: 0px;
         top: 40px;
+        color: #696969;
+        z-index: 1;
     }
 
     
@@ -436,13 +440,13 @@ li > a{
     li a {
         padding:10px 20px;
         display:block;
-        color:white;
         text-decoration:none;
         transition:all 0.3s ease-in-out;
     }
 
     .nav-active {
         background-color:#5865d4;
+        color: #333333;
     }
 
     
