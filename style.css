@@ -401,13 +401,13 @@ footer {
         display: none;
     }
 
-
     section[name="contact"] {
         padding: 0px 10px 0px 0px
     }
     
     section[name="about"] {
-        height: 100vh;
+        padding-left: 10%;
+        height: auto;
     }
 
     section[name="project"] {
@@ -556,6 +556,7 @@ footer {
     }
 
     .testodd-t {
+        width:100%;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row: 1/3;
@@ -568,6 +569,7 @@ footer {
     }
 
     .testeven-t {
+        width: 100%;
         grid-row: 1/3;
     }
 

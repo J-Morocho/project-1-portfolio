@@ -72,13 +72,14 @@ function placeOnGrid(n, project) {
     const $testevent = $('<div>').addClass('testodd-i').text('')
     if (n%2 === 0) {
         let $divLargeBlock = $('<div>').addClass('testeven-i').append([$projectDivider, $projHeader, $projectImage]);
-        const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $testoddi])
+        const $grid0 = $('<div>').addClass("grid0").append($divLargeBlock)
+        $grid0.append($('<div>').addClass('testeven-t').append($('<div>').addClass('project-divider')))
         $projectsContainerFlex.append($grid0)
 
     } else {
         let $divLargeBlock = $('<div>').addClass('testodd-i').append([$projectDivider, $projHeader, $projectImage])
         const $grid1 = $('<div>').addClass("grid1")
-        $grid1.append($('<div>').addClass('testodd-t').text(project.description))
+        $grid1.append($('<div>').addClass('testodd-t').append($('<div>').addClass('project-divider')))
         $grid1.append($divLargeBlock)
         $projectsContainerFlex.append($grid1)
     }
