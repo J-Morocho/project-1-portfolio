@@ -357,7 +357,7 @@ footer {
 /* desktop */
 @media only screen and (min-width: 1024px) {
     #content-container {
-        padding-right: 7em;
+        padding: 0px 10em 0px 40px;
         height: auto;
         
     }
@@ -404,17 +404,15 @@ footer {
 
 
     section[name="contact"] {
-        padding-bottom: 0px;
+        padding: 0px;
     }
     
-    
-    section {
-        width: 100%;
+    section[name="about"] {
         height: 100vh;
     }
 
     section[name="project"] {
-        padding-left: 0em;
+        
         height: auto;
     }
     #mobile-nav{

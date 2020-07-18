@@ -74,7 +74,7 @@ function placeOnGrid(n, project) {
         let $divLargeBlock = $('<div>').addClass('testeven-i').append([$projectDivider, $projHeader, $projectImage]);
         const $grid0 = $('<div>').addClass("grid0").append([$divLargeBlock, $testoddi])
         $projectsContainerFlex.append($grid0)
-        console.log('odd', n)
+
     } else {
         let $divLargeBlock = $('<div>').addClass('testodd-i').append([$projectDivider, $projHeader, $projectImage])
         const $grid1 = $('<div>').addClass("grid1")
@@ -86,12 +86,7 @@ function placeOnGrid(n, project) {
 } 
 
 
-
-
-
-
-
-// progressive scroll
+// Progressive scroll
 // Many thanks to Suresh Sigera for helping me out with this portion of my code.
 // grab all side-menu elements in the side-nav 
 let lastId,
@@ -120,7 +115,7 @@ $menuItems.click(function(e){
 
 // on scroll set distance from top to 
 // be the height of the bar + height of the menu
-// ERROR IS HERE...
+
 $(window).scroll(function(){
     // Get container scroll position
     let fromTop = $(this).scrollTop()+$topMenuHeight;
