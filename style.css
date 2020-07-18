@@ -287,9 +287,7 @@ footer {
 @media only screen and (min-width: 720px) {
 
     #content-container {
-
         height: auto;
-        background-color: green;
     }
 
     #my-name{
@@ -357,7 +355,8 @@ footer {
 /* desktop */
 @media only screen and (min-width: 1024px) {
     #content-container {
-        padding: 0px 10em 0px 40px;
+        width: auto;
+        margin-right: 100px;
         height: auto;
         
     }
@@ -404,7 +403,7 @@ footer {
 
 
     section[name="contact"] {
-        padding: 0px;
+        padding: 0px 10px 0px 0px
     }
     
     section[name="about"] {
@@ -544,7 +543,6 @@ footer {
         column-gap: 1em;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(2, 1fr);
-        height: 500px;
 
     }
 
@@ -554,7 +552,6 @@ footer {
         column-gap: 1em;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: repeat(2, 1fr);
-        height: 500px;
 
     }
 
