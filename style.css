@@ -361,14 +361,6 @@ footer {
         
     }
 
-    /* p#about-description {
-        width: auto;
-        padding: 1em;
-        margin: 0px;
-        font-size: 5vw;
-        line-height: 2em;
-    } */
-
     #sub-heading {
         display: block;
     }
@@ -381,8 +373,14 @@ footer {
     }
 
     #about-image {
-        position: relative;
+        position: absolute;
+        left: 0px;
         top: 1px;
+    }
+
+    #about-image > img {
+        width: 20%;
+        margin: 0px;
     }
     .bar {
         display: block;
@@ -402,18 +400,22 @@ footer {
     }
 
     section[name="contact"] {
-        padding: 0px 10px 0px 0px
+        height: 100vh;
+        margin-right: 100px;
     }
     
     section[name="about"] {
-        padding-left: 10%;
-        height: auto;
+        height: 100vh;
     }
 
     section[name="project"] {
-        
         height: auto;
     }
+
+    #contact-form-flex {
+        width: 50%;
+    }
+
     #mobile-nav{
         display: none;
     }
@@ -464,6 +466,10 @@ footer {
         display: none;
     }
 
+    li {
+        border-bottom: none;
+    }
+
     li a {
         padding:10px 20px;
         display:block;
@@ -487,10 +493,6 @@ footer {
         margin-top: 1em;
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: 1fr repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-auto-rows: auto; */
-        /* height: auto; */
 
     }
     
