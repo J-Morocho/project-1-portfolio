@@ -397,8 +397,9 @@ footer {
     }
 
     section[name="contact"] {
+        width: auto;
+        margin-right: 120px;
         height: auto;
-        margin-right: 100px;
     }
     
     section[name="about"] {
@@ -407,11 +408,17 @@ footer {
 
     section[name="project"] {
         margin-right: 100px;
+        padding: 30px;
         height: auto;
     }
 
     #contact-form-flex {
-        width: 50%;
+        margin-right: 120px;
+        padding: 4em;
+    }
+
+    h2#contact {
+        margin-right: 50px;
     }
 
     #mobile-nav{
@@ -503,7 +510,7 @@ footer {
     .project-header {
         display: flex;
         justify-content: space-between;
-        margin: 2%;
+        margin: 0px;
     }
     
     .project-header > h3 {
@@ -519,6 +526,10 @@ footer {
         text-align: center;
     }
 
+    #project-description {
+        margin-top: 50px;
+    }
+    
     .project-image {
         width: 100px;
     }

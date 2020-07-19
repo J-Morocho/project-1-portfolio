@@ -59,27 +59,26 @@ function placeOnGrid(n, project) {
     const $projectsContainerFlex = $('#projects-container-flex');
     const $projectDivider = $('<div>').addClass('project-divider');
     const $projHeader = $('<div>').addClass('project-header');
+    const $smprojHeader = $('<div>').addClass('project-header');
     const $projectName = $('<h3>').addClass('project-name').append($('<p>').text(project.title));
     const $projectLinks = $('<h3>').addClass('project-links').append([$('<a>').attr('href', project.url).text("Demo"), $('<a>').attr('href', project.code).text("Code")]);
     const $projectImage = $('<img>').attr('src', project.image).css('width', '100%');
     $projHeader.append([$projectName, $projectLinks]);
 
     // append projectDivider, projectHeader, projectImage to outer div used in grid
-    // **testodd-t is a placeholder name will be changed later
-    const $testoddi = $('<div>').addClass('testeven-t').text(project.description)
-    const $testoddt = $('<div>').addClass('testeven-t').text("")
-    const $testeveni = $('<div>').addClass('testodd-i').text('')
-    const $testevent = $('<div>').addClass('testodd-i').text('')
+
     if (n%2 === 0) {
         let $divLargeBlock = $('<div>').addClass('testeven-i').append([$projectDivider, $projHeader, $projectImage]);
+        let $desc = $('<h3>').text(project.description)
         const $grid0 = $('<div>').addClass("grid0").append($divLargeBlock)
-        $grid0.append($('<div>').addClass('testeven-t').append($('<div>').addClass('project-divider')))
+        $grid0.append($('<div>').addClass('testeven-t').append($('<div>').addClass('project-divider').append($smprojHeader).append($desc)))
         $projectsContainerFlex.append($grid0)
 
     } else {
         let $divLargeBlock = $('<div>').addClass('testodd-i').append([$projectDivider, $projHeader, $projectImage])
+        let $desc = $('<h3>').text(project.description)
         const $grid1 = $('<div>').addClass("grid1")
-        $grid1.append($('<div>').addClass('testodd-t').append($('<div>').addClass('project-divider')))
+        $grid1.append($('<div>').addClass('testodd-t').append($('<div>').addClass('project-divider').append($smprojHeader).append($desc)))
         $grid1.append($divLargeBlock)
         $projectsContainerFlex.append($grid1)
     }
