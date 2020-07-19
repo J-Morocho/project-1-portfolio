@@ -138,12 +138,13 @@ $(window).scroll(function(){
         $menuItems
           .parent().removeClass("nav-active")
           .end().filter(`[href="#${id}"]`).parent().addClass("nav-active");
+          
     }                   
  });
 
  function increaseBarLength(){
     
-    $('.bar').css('height', $(this).scrollTop()*.2 + 80)
+    $('.bar').css('height', $(this).scrollTop()*.2 + 60)
   }
   
   $(window).scroll(increaseBarLength)

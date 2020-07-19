@@ -11,8 +11,8 @@ https://project-1-portfolio.herokuapp.com/
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 2| Mobile core HTML and CSS | Complete
 |Day 3| Desktop core HTML and CSS| Complete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -91,18 +91,18 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 | Mobile/Tablet wireframe| 4hr | 6hr| 6hr|
 | Desktop wireframe| 2hr| 3hr| 3 hr|  
 | Mobile nav icon | M | 1hr | .70hr | .70hr|
-| Mobile scroll bar progression | M | 3hr | -hr | -hr|
+| Mobile scroll bar progression | M | 3hr | 3hr | 3hr|
 | Mobile nav slide in | H | 3hr | 5hr | 5hr|
 | Adding contact form | H | 1.5hr| 1.76hr | 1.76hr |
 | Styling google contact form| L | 1hr | .56hr| .56hr|
 | Projects section CSS Grid layout | H | 4hr | 6hr | 6hr|
-| Responsive projects section | H | 2hrs| -hr | -hr |
+| Responsive projects section | H | 2hrs| 4hr | 4hr |
 | Fixed nav bar on desktop | H | 1.5hr | .5hr | .5hr|
 | Desktop scroll bar highlight | H | 3hr | 3hr | 3hr|
 | Using API display projects | H | 4hr | 3hr | 3hr |
 | Deploying web app| H | 3hr | 1hr | 1hr |
-| Web app testing | H | 1.5hr | -hr | -hr |
-| Total | - | 31.5hrs| 30.52hrs | -hrs |
+| Web app testing | H | 1.5hr | 3hr | 3hr |
+| Total | - | 31.5hrs| 37.52hrs | 37.52hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
@@ -119,14 +119,19 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
+```js
+function increaseBarLength(){
+    
+    $('.bar').css('height', $(this).scrollTop()*.2 + 60)
+  }
+  
+  $(window).scroll(increaseBarLength)
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+After struggling for hours on another function involving scrollTop() I was able to make use of it for an important component on my webpage.
 
 ## Issues and Resolutions
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Uncaught Error: Syntax error, unrecognized expression [href=#project]
+**RESOLUTION**: use template literal when trying to use the href attribute
 
