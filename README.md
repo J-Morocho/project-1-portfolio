@@ -115,6 +115,9 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 
 ## Additional Libraries 
 
+jQuery
+
+
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
