@@ -13,7 +13,7 @@ https://project-1-portfolio.herokuapp.com/
 |Day 3| Desktop core HTML and CSS| Complete
 |Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Complete
-|Day 6| Present | Incomplete
+|Day 6| Present | Complete
 
 
 ## Project Description
