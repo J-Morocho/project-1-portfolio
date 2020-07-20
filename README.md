@@ -88,8 +88,8 @@ Sections begin to breath a bit more by arranging themselves in columns. The scro
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Mobile/Tablet wireframe| 4hr | 6hr| 6hr|
-| Desktop wireframe| 2hr| 3hr| 3 hr|  
+| Mobile/Tablet wireframe | H | 4hr | 6hr| 6hr|
+| Desktop wireframe | H | 2hr| 3hr| 3 hr|  
 | Mobile nav icon | M | 1hr | .70hr | .70hr|
 | Mobile scroll bar progression | M | 3hr | 3hr | 3hr|
 | Mobile nav slide in | H | 3hr | 5hr | 5hr|
