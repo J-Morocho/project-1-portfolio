@@ -134,7 +134,8 @@ function increaseBarLength(){
 After struggling for hours on another function involving scrollTop() I was able to make use of it for an important component on my webpage.
 
 ## Issues and Resolutions
-#### SAMPLE.....
-**ERROR**: Uncaught Error: Syntax error, unrecognized expression [href=#project]
+
+
+**ERROR**: Uncaught Error: Syntax error, unrecognized expression [href=#project]  
 **RESOLUTION**: use template literal when trying to use the href attribute
 
